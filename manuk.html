@@ -293,6 +293,34 @@
             justify-content: center;
         }
 
+        .card-contact{
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card-contact form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-contact input,
+        .card-contact textarea{
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .card-contact button{
+            margin-top: 10px;
+            padding: 14px;
+            border-radius: 12px;
+            border: none;
+            background: rgb(12,43,78);
+            color: white;
+        }
     </style>
 </head>
 <body class="preload">
@@ -465,8 +493,16 @@
 
     <div class="card" id="c6">
         <h1 class="judul">CONTACT ME</h1>
-        <div class="contact" id="contact1">
-            
+        <div class="contact">
+            <div class="card-contact">
+                <h3>EMAIL</h3>
+                <label for="NAME">NAME</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="EMAIL">NAME</label><br>
+                <input type="text" name="email" id="email"><br>
+                <textarea name="" id="">MESSAGE</textarea><br>  
+                <button type="submit">SUBMIT</button>
+            </div>
         </div>
     </div>
 
