@@ -296,7 +296,7 @@
         .card-contact{
             max-width: 500px;
             margin: auto;
-            padding: 30px;
+            padding:50px;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
@@ -320,6 +320,11 @@
             border: none;
             background: rgb(12,43,78);
             color: white;
+        }
+
+        .contact{
+            display: grid;
+            grid-template-columns: auto auto;
         }
     </style>
 </head>
@@ -494,8 +499,18 @@
     <div class="card" id="c6">
         <h1 class="judul">CONTACT ME</h1>
         <div class="contact">
-            <div class="card-contact">
+            <div class="card-contact" id="card-contact1">
                 <h3>EMAIL</h3>
+                <label for="NAME">NAME</label><br>
+                <input type="text" name="name" id="name"><br>
+                <label for="EMAIL">NAME</label><br>
+                <input type="text" name="email" id="email"><br>
+                <textarea name="" id="">MESSAGE</textarea><br>  
+                <button type="submit">SUBMIT</button>
+            </div>
+            
+            <div class="card-contact" id="card-contact2">
+                <h3>SOCIAL MEDIA</h3>
                 <label for="NAME">NAME</label><br>
                 <input type="text" name="name" id="name"><br>
                 <label for="EMAIL">NAME</label><br>
