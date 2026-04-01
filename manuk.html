@@ -272,12 +272,13 @@
         .cf_card{
             border-radius: 20px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-            padding: 30px;
-            width: 400px;
+            padding: 25px;
+            width: 100%;
+            max-width: 500px;
             transition: all 0.3s ease-in-out;
-            margin-right: 50px;
-            margin-left: 50px;
             color: rgb(12, 43, 78);
+            background-color: white;
+            box-sizing: border-box;
         }
 
         .cf_card:hover{
@@ -326,6 +327,20 @@
             display: grid;
             grid-template-columns: auto auto;
         }
+
+        .projects{
+            display: grid;
+            grid-template-columns: repeat(2, minmax(320px, 1fr));
+            gap: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+            justify-items: center;
+            align-items: start;
+        }
+
+        .projects a{
+            text-decoration: none;
+        }
     </style>
 </head>
 <body class="preload">
@@ -334,7 +349,7 @@
             <li><a href="#c1" class="link_nav">About</a></li>
             <li><a href="#c2" class="link_nav">Skills</a></li>
             <li><a href="#c3" class="link_nav">Certificates</a></li>
-            <li><a href="#c5" class="link_nav">Documentations</a></li>
+            <li><a href="#c5" class="link_nav">Projects</a></li>
             <li><a href="#c6" class="link_nav">Contact</a></li>
             <li><a href="#c4" class="link_nav">Home</a></li>
         </ul>
@@ -490,11 +505,35 @@
     </div>
 
     <div class="card" id="c5">
-        <h1 class="judul">DOCUMENTATIONS</h1>
-        <div class="contact" id="contact1">
-            
-        </div>
+    <h1 class="judul">PROJECTS</h1>
+    <div class="projects" id="projects">
+        
+        <a href="https://farel-wiznyu.github.io/cfmoto/450_mt/" target="_blank">
+            <div class="cf_card">
+                <img src="../assets/Screenshot 2026-04-01 063900.png" alt="" width="400px">
+                <br><br>
+                <h4 style="text-align: center;">CFMOTO 450 MT</h4>
+            </div>
+        </a>
+
+        <a href="https://farel-wiznyu.github.io/proyek-ferdih/pages/" target="_blank">
+            <div class="cf_card">
+                <img src="../assets/Screenshot 2026-04-01 064636.png" alt="" width="400px">
+                <br><br>
+                <h4 style="text-align: center;">Budaya Indonesia</h4>
+            </div>
+        </a>
+
+        <a href="https://farel-wiznyu.github.io/daftar_alfabet/" target="_blank">
+            <div class="cf_card">
+                <img src="../assets/Screenshot 2026-04-01 065018.png" alt="" width="400px">
+                <br><br>
+                <h4 style="text-align: center;">Daftar Alfabet</h4>
+            </div>
+        </a>
+
     </div>
+</div>
 
     <div class="card" id="c6">
         <h1 class="judul">CONTACT ME</h1>
